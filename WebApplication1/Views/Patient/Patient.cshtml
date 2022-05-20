@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ADD PATIENT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-image: url('../../iamges/ghj.jpg');
+            background-size: cover;
+        }
+
+        .Box {
+            width: 300px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+            .Box h1 {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .Box input[type= "text"], .Box input[type="password"] {
+                border: 0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 3px solid #0367fd;
+                padding: 14px 10px;
+                width: 220px;
+                outline: none;
+                color: white;
+                border-radius: 24px;
+                transition: 0.25px;
+            }
+
+                .Box input[type="text"]:focus, .Box input[type"password"]:focus {
+                    width: 270px;
+                    border-color: #ffc400ec;
+                }
+
+            .Box input[type="submit"] {
+                border: 0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 3px solid #0367fd;
+                padding: 14px 10px;
+                width: 220px;
+                outline: none;
+                color: white;
+                border-radius: 24px;
+                transition: 0.25px;
+                cursor: pointer;
+            }
+
+                .Box input[type="submit"]:hover {
+                    border: #0367fd;
+                }
+    </style>
+</head>
+<body>
+    <form class="Box" action="Patient" method="POST">
+        <h1>
+            ADD PATIENT
+        </h1>
+        <input type="text" name="Patient_id" placeholder="Patient Id" id="Patient_id" />
+        <input type="text" name="Patient_name" placeholder="Patient Name" id="Patient_name" />
+        <input type="text" name="Patient_address" placeholder="Patient Address" id="Patient_address" />
+        <input type="text" name="Patient_phone_number" placeholder="Patient Phone Number" id="Patient_phone_number" />
+        <input type="text" name="Patient_age" placeholder="Patient Age" id="Patient_age" />
+        <input type="text" name="Patient_gender" placeholder="Patient Gender" id="Patient_gender" />
+        <input type="text" name="patient_blood_group" placeholder="Patient Blood Group" id="patient_blood_group" />
+        <input type="text" name="Major_disease" placeholder="Patient Major disease" id="Major_disease" />
+        <input type="text" name=" Doctor_id" placeholder="Doctor Id" id=" Doctor_id" />
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
